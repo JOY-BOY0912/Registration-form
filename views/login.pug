@@ -1,0 +1,13 @@
+doctype html
+html(lang="en")
+    head
+        title Document
+        style 
+         include ../static/button.css
+    body 
+        form(action='/login' method="post" class="container" )
+            <input type="text" name="email" placeholder="Enter your email" value="#{locals.email}">
+            <input type="password" name="password" placeholder="password">
+            p #{locals.message} 
+            br
+            button LOG In 
